@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Cabeçalho / Menu */
+.menu-principal{
+    background-color: #FFF;
+}
+
+.menu-principal ul{
+    margin-left: 200px;
+}
+
+.menu-principal ul li{
+    margin-right: 60px;
+}
+
+.menu-principal a{
+    font-size: .8em;
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000;
+}
+
+.form-search{
+    overflow: hidden;
+}
+
+/* Ícones menu */
+.btn-search{
+    position: relative;
+    top: 3px;
+    right: 50px;
+}
+
+.btn-cart{
+    position: relative;
+    right: 40px;
+}
+
+.menu-fixed{
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+}
+/* ------------ */
+
+/* Dropdown */
+
+/* --------------- */
+
+/* Capa Principal */
+.capa{
+    background: url('../img/capa-principal.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* ----------- */
+
+/* Logo SVG */
+#logo{
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+#logo a{
+    text-decoration: none;
+}
+
+.svg-logo{
+    fill: #FFF;
+}
+
+.svg-logo-black{
+    fill: #000;
+}
+/* ------------ */
+
+/* Coleções */
+.colecoes{
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+}
+
+.previa-colecoes ul, .previa-linhas ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 50px 0px 180px;
+}
+
+.previa-colecoes ul li, .previa-linhas ul li{
+    position: relative;
+    display: inline;
+    margin: 5px;
+}
+
+.previa-colecoes ul li a, .previa-linhas ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/* --------------- */
+
+/* Efeito Overlay */
+.legenda-img{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.legenda-img:hover{
+    opacity: .9;
+}
+
+.legenda-img h3{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+/* -------------- */
+
+/* Nossas linhas */
+.linhas{
+    height: 100%;
+    text-align: center;
+}
+
+.titulo-secao{
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ------------ */
+
+/* Destaques */
+.destaques{
+    text-align: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.destaques p, .tamanho p{
+    color: rgb(204, 204, 204);
+}
+/* -------- */
+
+/* Carousel */
+.carousel{
+    height: 250px;
+    width: 80%;
+    overflow-y: hidden;
+    display: block;
+    margin-left: 190px;
+}
+
+.carousel div a img{
+    cursor: grab;
+}
+
+.carousel div{
+    opacity: .9;
+    transition: .5s ease;
+}
+
+.carousel div:hover{
+    opacity: 1;
+}
+/* ------------ */
+
+/* Tamanhos */
+.tamanho{
+    text-align: center;
+    height: 100%;
+}
+
+.tamanhos{
+    width: 80%;
+    margin-left: 190px;
+    overflow-y: hidden;
+    cursor: e-resize;
+}
+
+.tamanhos div a span{
+    background-color: #27241f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 49px;
+    width: 68px;
+    color: #FFF;
+    cursor: grab;
+    transition: .3s ease;
+}
+
+.tamanhos div a span:hover{
+    background-color: rgb(39, 112, 202);
+}
+
+.tamanhos div a:hover{
+    text-decoration: none;
+}
+/* ------------ */
+
+/* Departamentos */
+.departamentos{
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.departamentos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.departamentos ul li{
+    display: inline-block;
+    margin: 5px;
+}
+/* ------------- */
+
+/* Footer */
+footer{
+    height: 30vh;
+    background-color: rgb(39, 112, 202);
+    text-align: center;
+    overflow-y: hidden;
+}
+
+footer .rdp-logo{
+    display: block;
+    height: 140px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+}
+
+footer .rdp-logo img{
+    width: 320px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1293px){
+    .previa-colecoes ul li a img{
+        width: 220px;
+    }
+
+    .previa-linhas ul li a img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1169px){
+    .previa-colecoes ul li a img{
+        width: 200px;
+    }
+
+    .departamentos ul li a img{
+        width: 240px;
+    }
+
+    .previa-linhas ul li a img{
+        width: 280px;
+    }
+
+    .carousel div img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1046px){
+    .input-search{
+        width: 150px !important;
+    }
+
+    .departamentos ul li a img{
+        width: 220px;
+    }
+
+    .previa-colecoes ul li a img{
+        width: 180px;
+    }
+
+    .previa-linhas ul li a img{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1005px){
+    .input-search{
+        width: 130px !important;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .menu-principal ul{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .menu-principal ul li a{
+        font-size: 1em;
+    }
+
+    .input-search{
+        width: 300px !important;
+    }
+
+    .btn-cart{
+        left: 350px;
+        bottom: 45px
+    }
+
+    #logo{
+        left: -300px;
+    }
+
+    .colecoes, .linhas{
+        overflow: hidden;
+    }
+
+    .previa-colecoes ul, .previa-linhas ul, .departamentos ul{
+        display: block;
+        padding: 0;
+    }
+
+    .previa-colecoes ul li, .previa-linhas ul li, .departamentos ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .previa-colecoes ul li a img, .previa-linhas ul li a img, .departamentos ul li a img{
+        width: 420px;
+    }
+
+    .legenda-img{
+        opacity: 1;
+        background-color: transparent;
+    }
+
+    .legenda-img h3{
+        background-color: #FFF;
+        opacity: .8;
+        padding: 10px; 
+    }
+
+    .linhas .legenda-img{
+        opacity: 0;
+    }
+
+    .carousel, .tamanhos{
+        margin: 0 auto;
+    }
+
+    .departamentos ul{
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .btn-cart{
+        bottom: 50px;
+    }
+}
